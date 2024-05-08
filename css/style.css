@@ -1,0 +1,88 @@
+:root {
+    --background-color-blue-300: rgb(134, 206, 248);
+    --background-color-blue-200: rgb(206, 232, 252);
+    --background-color-blue-100: rgb(225, 244, 255);
+
+    --background-color-blue-focus: rgb(145, 193, 255);
+
+    --background-color-button: rgb(68, 158, 255);
+    --background-color-button-hover: rgb(93, 171, 255);
+
+    --background-color-warning: rgb(255, 206, 206);
+    --background-color-warning-number: rgb(255, 71, 71);
+
+    --color-text: rgb(32, 33, 36);
+
+    --border-color: rgb(15, 27, 83);
+
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color-blue-300);
+}
+
+form {
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 50rem;
+    box-shadow: 0 2px 8px var(--box-shadow-color);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: var(--background-color-blue-200);
+}
+
+.block {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font: inherit;
+    font-size: 1.15rem;
+    padding: 0.35rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color-blue-100);
+    color: var(--color-text);
+    width: 25rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+input:focus {
+    background-color: var(--background-color-blue-focus);
+}
+
+button {
+    font: inherit;
+    background-color: var(--background-color-button);
+    border: 1px solid var(--border-color);
+    color: var(--color-text);
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--background-color-button-hover);
+    border-color: var(--border-color);
+}
+
+#charcount {
+    color: var(--color-text);
+}
+
+input.warning {
+    background-color: var(--background-color-warning);
+}
+
+#remaining-chars.warning {
+    color: var(--background-color-warning-number);
+}
