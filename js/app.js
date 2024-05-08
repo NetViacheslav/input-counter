@@ -1,6 +1,7 @@
 // Get access to input field:
 const inputFieldElement = document.getElementById('input-chars');
 
+// console.dir(inputFieldElement);
 // Get access to <span class="remaining-chars">:
 const remainingCharsElement = document.getElementById('remaining-chars');
 
@@ -27,5 +28,11 @@ inputFieldElement.addEventListener('input', (event) => {
     if (remainingChars <= 10) {
         remainingCharsElement.classList.add('warning');
         inputFieldElement.classList.add('warning');
+    } else {
+        remainingCharsElement.classList.remove('warning');
+        inputFieldElement.classList.remove('warning');
     }
+    // Alternative with use method toggle:
+    // remainingCharsElement.classList.toggle('warning', remainingChars <= 10);
+    // inputFieldElement.classList.toggle('warning', remainingChars <= 10);
 });
